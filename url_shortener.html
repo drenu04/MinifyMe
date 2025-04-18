@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="url_shortener.css">
+</head>
+
+<body>
+    <div class="card-wrapper">
+        <!-- Dark Mode Toggle (Half-Moon) -->
+        <button id="dark-mode-toggle" class="theme-toggle">
+      🌙
+    </button>
+
+        <div class="card">
+            <h1 class="title">URL Shortener</h1>
+            <form id="shorten-form">
+                <div class="form-group">
+                    <label for="url">Enter URL:</label>
+                    <input type="url" name="url" id="url" placeholder="https://example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="shortcode">Custom Short URL (Optional):</label>
+                    <input type="text" name="shortcode" id="shortcode" placeholder="e.g. mylink">
+                </div>
+
+                <button type="submit" class="btn">Shorten</button>
+            </form>
+
+            <h2 class="subheading">Shortened URLs</h2>
+            <div id="shortened-urls" class="url-list"></div>
+        </div>
+    </div>
+
+    <script src="url_shortener.js"></script>
+</body>
+
+</html>
